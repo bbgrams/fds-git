@@ -170,3 +170,10 @@ multiply(3, 4); // 12
 "함수를 호출하면 값을 반환한다"
 ```
 
+
+```
+// 브라우저 내장 함수인 `prompt`, `console.log`, `alert` 사용하기
+const answer = prompt('이름이 무엇인가요?');   // 사용자에게 입력을 받을 수 있다. 입력받은 값이 반환돼서 answer라는 변수에 저장된다.
+console.log(answer);   // 저장된 answer의 값이 콘솔창에 뜨고
+alert(answer);   // 저장된 answer의 값이 얼럿창으로도 띄울 수 있다.
+```
