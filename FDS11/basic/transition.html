@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang=ko-KR>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>전이 효과(transition)</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background: pink;
+            border: 5px solid #181818;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+            transition-property: transform, background, border-radius, width, height;
+            transition-duration: 2s;
+            transition-delay: 0s, 2s, 4s, 6s, 8s; /* bg 0초 딜레이, b-r 2초 딜레이,  w 4초 딜레이, h 6초 딜레이 (이거 짱 신기해) */
+
+        }
+        .box2:hover{
+            width: 200px;
+            height: 200px;
+            background:mediumseagreen;
+            border-radius: 50%;
+            border:5px solid mediumseagreen;
+            transform: rotate(360deg);
+        }
+        .box-act{
+            width: 200px;
+            height: 200px;
+            background:mediumorchid;
+            border-radius: 50%;
+            border:5px solid teal;
+            transform: rotate(360deg);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="btn">
+        <button type="submit" class="box-ani">
+            애니메이션 효과
+        </button>
+    </div>
+    <div class="box1">
+        박스 1
+    </div>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/transition.js" defer></script>
+</body>
+</html>
