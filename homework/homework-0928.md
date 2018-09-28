@@ -32,7 +32,7 @@ primeNumber(7)
 function star(num){
   //console.log( '*'.repeat(num) ) // num의 갯수만큼 * 출력
   for ( let i = 0; i < num; i++){
-    console.log( '*'.repeat(i+1) )
+    console.log( '* '.repeat(i+1) )
   }
 }
 
